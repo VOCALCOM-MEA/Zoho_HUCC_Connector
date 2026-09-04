@@ -1,0 +1,17 @@
+# Build output
+dist/
+*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.log
+
+# Secrets (never commit real credentials)
+.env
+.env.*
+*.pem

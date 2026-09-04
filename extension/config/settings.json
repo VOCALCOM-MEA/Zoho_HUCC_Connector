@@ -1,0 +1,15 @@
+{
+  "frontUrl": "https://cdn01.demo.hermes.vocalcom.com/hermes360/HUCC/ProxyHermesFront",
+  "loaderUrl": "https://cdn01.demo.hermes.vocalcom.com/hermes360/HUCC/ProxyHermesCRMPlugins/StandAlone/login2.js",
+  "proxyConfig": "https://cdn01.demo.hermes.vocalcom.com/hermes360/HUCC/ProxyHermesConfig",
+  "configCode": "HUCCPluginConfiguration360",
+  "configCodeZohoPlaceholder": "HUCCPluginConfigurationZoho",
+  "customerId": "10",
+  "defaultStation": "86659",
+  "demoCredentials": {
+    "login": "1013",
+    "password": "123456",
+    "station": "86659",
+    "note": "Demo POC values only. Replace per agent in production."
+  }
+}

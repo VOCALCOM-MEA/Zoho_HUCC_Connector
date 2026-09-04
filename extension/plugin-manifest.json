@@ -1,0 +1,93 @@
+{
+  "locale": ["en"],
+  "defaultLocale": "en",
+  "service": "CRM",
+  "storage": true,
+  "whiteListedDomains": [
+    "https://cdn01.demo.hermes.vocalcom.com",
+    "https://www.zohoapis.com",
+    "https://crm.zoho.com",
+    "https://crm.zoho.eu",
+    "https://crm.zoho.in",
+    "https://crm.zoho.com.au",
+    "https://crm.zohocloud.ca"
+  ],
+  "permissions": {
+    "microphone": true,
+    "camera": true
+  },
+  "modules": {
+    "widgets": [
+      {
+        "title": "Vocalcom HUCC",
+        "name": "Vocalcom_HUCC",
+        "location": "webtab",
+        "url": "/app/widget.html",
+        "logo": "/app/img/logo.png",
+        "icon": "/app/img/icon.png"
+      }
+    ]
+  },
+  "cspDomains": {
+    "connect-src": [
+      "https://cdn01.demo.hermes.vocalcom.com",
+      "https://www.zohoapis.com"
+    ],
+    "frame-src": [
+      "https://cdn01.demo.hermes.vocalcom.com"
+    ]
+  },
+  "config": [
+    {
+      "displayName": "HUCC Front URL",
+      "name": "hucc_front_url",
+      "type": "text",
+      "description": "Vocalcom ProxyHermesFront base URL",
+      "mandatory": true,
+      "userdefined": false,
+      "authType": "org",
+      "default": "https://cdn01.demo.hermes.vocalcom.com/hermes360/HUCC/ProxyHermesFront"
+    },
+    {
+      "displayName": "HUCC Loader URL (login2.js)",
+      "name": "hucc_loader_url",
+      "type": "text",
+      "description": "CDN loader script. Use login2.js (reads URL params), not login.js.",
+      "mandatory": true,
+      "userdefined": false,
+      "authType": "org",
+      "default": "https://cdn01.demo.hermes.vocalcom.com/hermes360/HUCC/ProxyHermesCRMPlugins/StandAlone/login2.js"
+    },
+    {
+      "displayName": "Proxy Config URL",
+      "name": "hucc_proxy_config",
+      "type": "text",
+      "description": "Vocalcom proxyConfig endpoint",
+      "mandatory": true,
+      "userdefined": false,
+      "authType": "org",
+      "default": "https://cdn01.demo.hermes.vocalcom.com/hermes360/HUCC/ProxyHermesConfig"
+    },
+    {
+      "displayName": "Config Code",
+      "name": "hucc_config_code",
+      "type": "text",
+      "description": "Ask Vocalcom for Zoho-specific configCode (placeholder: HUCCPluginConfigurationZoho). Demo uses HUCCPluginConfiguration360.",
+      "mandatory": true,
+      "userdefined": false,
+      "authType": "org",
+      "default": "HUCCPluginConfiguration360"
+    },
+    {
+      "displayName": "Customer ID",
+      "name": "hucc_customer_id",
+      "type": "text",
+      "description": "Vocalcom tenant CustomerID",
+      "mandatory": true,
+      "userdefined": false,
+      "authType": "org",
+      "default": "10"
+    }
+  ],
+  "connectors": []
+}
